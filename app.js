@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json({ limit: "50mb" }));
 
-const allowedOrigins = ['http://localhost:3000']
+const allowedOrigins = ['http://localhost:3000','https://loginapp-kingsonwong-projects.herokuapp.com/']
 app.use(cors({
   origin: (origin, callback) => {
     if(!origin) return callback(null, true);
